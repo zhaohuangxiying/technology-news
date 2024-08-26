@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+#IEtip{
+	display: none;
+}
+
+#goodcover {
+	display: block;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 99999999999998;
+	background-color: black;
+	opacity: 0.80;
+	filter: alpha(opacity=60);
+}
+
+.code1 {
+	width: 100%;
+	height: 5px;
+	background: #CCCCCC;
+}
+
+#code {
+	width: 500px;
+	background-color: #fff;
+	position: fixed;
+	display: block;
+	top: 80px;
+	left: 50%;
+	margin-left: -250px;
+	z-index: 99999999999999;
+}
+
+#closebt {
+	float: right;
+	cursor: pointer;
+}
+
+#closebt img {
+	width: 15px;
+	margin: 10px 10px 0 0;
+}
+
+#closebt1 {
+
+	margin: 0px 0 0 20px;
+}
+
+.goodtxt {
+	text-align: left;
+	padding: 30px 25px 50px;
+}
+
+.goodtxt h2 {
+	line-height: 28px;
+	font-size: 16px;
+	color: #666;
+	margin: 10px 0;
+}
+
+.goodtxt h3 {
+	font-size: 16px;
+	line-height: 28px;
+	color: #666;
+	margin: 10px 0px;
+}
+
+.goodtxt h4 {
+	font-size: 18px;
+	line-height: 30px;
+	color: #FF4242;
+	margin: 10px 0;
+}
+
+.goodtxt a{
+	font-size: 15px;
+	color: #00f;
+	text-decoration: underline;
+}
+
+.goodtxt a:hover{
+	text-decoration: none;
+}
+
+.code-tip{
+	padding: 0 10px;
+}
+
+.code-tip img{
+	width: 300px;
+}
+
+.code-img {
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+.code-img a{
+	display: block;
+	float: left;
+	margin: 0 10px;
+}
+
+.code-img img {
+	width: 80px;
+}

@@ -1,0 +1,62 @@
+$(function() {
+	/** 微信分享新增 start **/
+	// 基础参数
+	var title = $.trim($('title').text());
+	var wxShareImg = "";
+	var link = location.href;
+	var desc = $.trim($('meta[name=description]').attr('content'));
+	if (typeof $("#printContent img").eq(0).attr("src") != "undefined") {
+		var url = $("#printContent img").eq(0).attr("src");
+		wxShareImg = url.includes("http") ? url : location.origin + '/' + url
+	}else if(typeof $(".shareImg img").attr("src") != "undefined" && $(".shareImg img").attr("src") != ''){
+		wxShareImg = $(".shareImg img").attr("src");
+	}else{
+		wxShareImg = "https://www.stdaily.com/resource/kjw/img/wx.jpeg";
+	}
+	// 接口配置
+	var xyUrl = "https://appif-app.kjrb.com.cn/app_if/"; //APP_IF接口地址，需要修改
+	var wxShareUrl = location.href.split('#')[0];
+	//获取签名
+	$.ajax({
+	   url: xyUrl + "wx/signature",
+	   data: { url: wxShareUrl, siteId: 1 }, //站点ID，需要修改
+	   dataType: 'jsonp',
+	   success: function (dataShare) {
+		   // console.log(dataShare, typeof dataShare)
+		   var shareData = {
+			  title: title,//通过模板提取标题
+			  desc: desc, //通过模板提取摘要
+			  link: link, //详情页带#
+			  imgUrl: wxShareImg
+			};
+		   wx.config({
+			   debug: false,
+			   appId: dataShare.appid,
+			   nonceStr: dataShare.noncestr,  // 必填，生成签名的随机串
+			   timestamp: dataShare.timestamp,  // 必填，生成签名的时间戳
+			   signature: dataShare.signature, // 必填，签名
+			   jsApiList: [
+				   'updateAppMessageShareData',
+				   'updateTimelineShareData',
+				   'onMenuShareTimeline',
+				   'onMenuShareAppMessage',
+				   'onMenuShareQQ',
+				   'onMenuShareQZone',
+				   'onMenuShareWeibo'
+			   ]
+		   });
+		   wx.ready(function () {
+			   wx.updateAppMessageShareData(shareData)
+			   wx.updateTimelineShareData(shareData);
+			   wx.onMenuShareTimeline(shareData);
+			   wx.onMenuShareAppMessage(shareData);
+			   wx.onMenuShareQQ(shareData);
+			   wx.onMenuShareQZone(shareData);
+			   wx.onMenuShareWeibo(shareData);
+		   });
+	   },
+	   error: function (dataShare) {
+	   }
+	});
+	/** 微信分享新增 end **/
+})

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+	list-style: none;
+}
+/* 头部导航 */
+.m_header {
+    position: relative;
+}
+
+.m_header1 {
+    height: 40px;
+    line-height: 40px;
+    background-color: #fbfbfb;
+    border-bottom: 1px #eaeaea solid;
+}
+
+.m_topNav {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.m_topNav ul li {
+    float: left;
+    padding: 0 10px;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.m_topNav li a {
+    color: #6b6b6b;
+}
