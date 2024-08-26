@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!-- saved from url=(0291)https://widget.weibo.com/livestream/listlive.php?publish=1&talk=1&refer=1&titlebar=1&border=1&member=1&width=0&height=700&skin=1&colordiy=0&ptype=1&language=zh_cn&appkey=3168463122&ptopic=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&atopic=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&at=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>直播组件</title>
+<link rel="stylesheet" type="text/css" href="./liveStream.css">
+<link rel="stylesheet" type="text/css" href="./skin_default.css">
+<!--
+<link href="http://img.t.sinajs.cn/t4/appstyle/widget/css/liveStream/liveStream.css" rel="stylesheet" type="text/css">
+-->
+
+<script type="text/javascript">
+	var conf = {js:"20101227183305"};
+	var $CONFIG = {
+		$lang		  : "zh",
+		$oid          : "1652248605",
+		$uid          : "",
+		$severtime    : "1293503953",
+		$product : "miniblog",
+		$pageid       : "square_top",
+		$faceIcons      : [],
+		$cuser_status	: "full",
+		$skin			: "skin_046",
+		$url_params     : "",
+		$spr          :"",
+		$language	  : "zh_cn",
+        $wsrc:'app_live_stream',
+        $dup:'0',
+        $antispam:'0',
+        $isOutTopicSearch:'1'
+	};
+	var scope = $CONFIG;
+</script>
+
+<script src="./gaea_1_20.js.下载" type="text/javascript"></script>
+
+<script>
+scope.listid = '';
+scope.appkey = '3168463122';
+scope.sinceid = '';
+scope.maxid = '';
+scope.mid = '5074224861940601';
+scope.start = 1;
+scope.listuid = '';
+scope.topic = '%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE'; //要编码,搜索的话题
+scope.puptopic = '%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE'; //要编码，发布框的话题
+scope.appsrc = '56zvDY';
+scope.refer = 'www.stdaily.com';
+scope.refer_content = '(来自 http://t.cn/A68piRm1 )';
+scope.url_param = '';
+scope.uids = [];
+scope.current_user_weibo="";
+scope.current_user_sina="";
+</script>
+
+</head>
+
+<body marginheight="0">
+<!--****** 他们在说  已登录 ******* -->
+<div class="WB_widgets liveStream" style="width:100%;" id="pl_live">
+  <!-- 顶部边框/标识彩条 -->
+  <div class="liveStream_topborder">
+    <p></p>
+  </div>
+  <!-- /顶部边框/标识彩条 -->
+  <div class="liveStream_wrap">
+    <!-- 标题 置顶 -->
+    <div class="liveStream_title liveStream_title_top">
+      <!-- logo -->
+      <div class="liveStream_title_logo"><a href="https://weibo.com/" target="_blank"><em class="WB_logo16a" title="微博">微博</em><span>微博</span></a></div>
+      <!-- /logo -->
+    </div>
+    <!-- /标题 置顶 -->
+
+        <!-- 发布框/登录 -->
+    <div class="liveStream_publishbox clearfix" id="publisher" style="margin-bottom: -18px;">
+      <div class="commentInput_area">
+        <textarea class="WB_textarea" node-type="editor"></textarea>
+      </div>
+      <div class="commentInput_action clearfix">
+        <div class="commentInput_actionButton">
+          <p class="commentInput_actionSub"><a href="https://widget.weibo.com/livestream/listlive.php?publish=1&amp;talk=1&amp;refer=1&amp;titlebar=1&amp;border=1&amp;member=1&amp;width=0&amp;height=700&amp;skin=1&amp;colordiy=0&amp;ptype=1&amp;language=zh_cn&amp;appkey=3168463122&amp;ptopic=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;atopic=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;at=1#" class="WB_btnA" id="publisherBtn"><span>发布</span></a></p>
+          <p class="commentInput_actionFont"><span class="txt_num" node-type="wordNum">6</span>字</p>
+        </div>
+      </div>
+    </div>
+    <!-- /发布框/登录 -->
+    
+    <div class="liveStream_main">
+      <!-- liveStream_main_header -->
+      <div class="liveStream_main_header clearfix">
+        <ul class="liveStream_main_tab" id="tabs">
+          <li class="current"><a href="https://widget.weibo.com/livestream/listlive.php?publish=1&amp;talk=1&amp;refer=1&amp;titlebar=1&amp;border=1&amp;member=1&amp;width=0&amp;height=700&amp;skin=1&amp;colordiy=0&amp;ptype=1&amp;language=zh_cn&amp;appkey=3168463122&amp;ptopic=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;atopic=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;at=1#">大家在说</a></li>                  </ul>
+      </div>
+      <!-- /liveStream_main_header -->
+
+      <div class="liveStream_main_height" style="height: 467px;" id="live_content"><!-- 高度设定 -->
+        <!-- liveStream_main_feed -->
+        <div class="liveStream_main_feed" node-type="box">
+
+							       		          <div class="liveStream_mainFeed_list clearfix">
+            <div class="liveStream_mainFeed_list_wrap clearfix" id="mid5074224861940601">
+              <div class="liveStream_mainFeed_listPic"><a href="http://weibo.com/u/7474454705" target="_blank"><img src="./0089Q373ly8hokd5ygvojj30qo0qo40m.jpg" alt="科研云" title="科研云"></a></div>
+              <div class="liveStream_mainFeed_listContent">
+                <p class="liveStream_mainFeed_listContent_txt"><a href="http://weibo.com/u/7474454705" title="科研云" target="_blank">科研云</a><span class="WB_approve" title="新浪认证"></span>：次世代多组学技术在生物医学研究中的应用<a href="http://s.weibo.com/weibo?q=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;from=601" target="_blank">#微博公开课#</a>  <a href="http://t.cn/A6RCaFSB" target="_blank">http://t.cn/A6RCaFSB</a> ​
+                                    </p>
+
+                               
+                
+                   
+
+                <p class="liveStream_mainFeed_listContent_action WB_linkB">
+                    <span class="liveStream_mainFeed_listContent_actionTime"><a href="http://weibo.com/7474454705/Ov8Vw88Q1" target="_blank">48分钟前</a></span>
+                    <span class="liveStream_mainFeed_listContent_actionMore"><a node-type="repost" href="javascript:;" data="uname=科研云&amp;mid=5074224861940601&amp;srcuid=7474454705&amp;forward=次世代多组学技术在生物医学研究中的应用#微博公开课#  http://t.cn/A6RCaFSB ​">转发</a>
+                        <em class="liveStream_vline">|</em><a node-type="comment" href="javascript:;" data="uname=科研云&amp;mid=5074224861940601&amp;srcuid=7474454705">评论</a></span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+                    <div class="liveStream_mainFeed_list clearfix">
+            <div class="liveStream_mainFeed_list_wrap clearfix" id="mid5074218049601832">
+              <div class="liveStream_mainFeed_listPic"><a href="http://weibo.com/hebeiqixiang" target="_blank"><img src="./81630215ly8h8w12w149qj202s02smwz.jpg" alt="河北天气" title="河北天气"></a></div>
+              <div class="liveStream_mainFeed_listContent">
+                <p class="liveStream_mainFeed_listContent_txt"><a href="http://weibo.com/hebeiqixiang" title="河北天气" target="_blank">河北天气</a><span class="WB_approve_co" title="新浪认证"></span>：<a href="http://s.weibo.com/weibo?q=%E6%B0%94%E8%B1%A1%E7%A7%91%E6%99%AE&amp;from=601" target="_blank">#气象科普#</a> <a href="http://s.weibo.com/weibo?q=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;from=601" target="_blank">#微博公开课#</a> 【雷电绝密档案 出头鸟--打的就是你】 今天傍晚到夜间，保定西南部、石家庄西部、邢台西北部阴有零星阵雨转多云。<a href="http://t.cn/ESF1ntY" target="_blank">http://t.cn/ESF1ntY</a> ​
+                                    </p>
+
+                               
+                
+                   
+
+                <p class="liveStream_mainFeed_listContent_action WB_linkB">
+                    <span class="liveStream_mainFeed_listContent_actionTime"><a href="http://weibo.com/2170749461/Ov8KwEhSg" target="_blank">今天 18:02</a></span>
+                    <span class="liveStream_mainFeed_listContent_actionMore"><a node-type="repost" href="javascript:;" data="uname=河北天气&amp;mid=5074218049601832&amp;srcuid=2170749461&amp;forward=#气象科普# #微博公开课# 【雷电绝密档案 出头鸟--打的就是你】 今天傍晚到夜间，保定西南部、石家庄西部、邢台西北部阴有零星阵雨转多云。http://t.cn/ESF1ntY ​">转发</a>
+                        <em class="liveStream_vline">|</em><a node-type="comment" href="javascript:;" data="uname=河北天气&amp;mid=5074218049601832&amp;srcuid=2170749461">评论</a></span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+                    <div class="liveStream_mainFeed_list clearfix">
+            <div class="liveStream_mainFeed_list_wrap clearfix" id="mid5074213674943818">
+              <div class="liveStream_mainFeed_listPic"><a href="http://weibo.com/u/1569901041" target="_blank"><img src="./5d92c9f1ly8gw45c55qw5j20e80e8mxw.jpg" alt="陕西虎牙" title="陕西虎牙"></a></div>
+              <div class="liveStream_mainFeed_listContent">
+                <p class="liveStream_mainFeed_listContent_txt"><a href="http://weibo.com/u/1569901041" title="陕西虎牙" target="_blank">陕西虎牙</a><span class="WB_approve" title="新浪认证"></span>：<a href="http://s.weibo.com/weibo?q=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;from=601" target="_blank">#微博公开课#</a> <a href="http://s.weibo.com/weibo?q=%E5%8E%86%E5%8F%B2%E4%BA%91%E8%AE%B2%E5%A0%82&amp;from=601" target="_blank">#历史云讲堂#</a> 
+                                    </p>
+
+                               
+                
+                                   <p class="liveStream_mainFeed_listContent_txt">[转发微博]<a href="http://weibo.com/u/7761102636" title="五方中山文创" target="_blank">五方中山文创<span class="WB_approve_co" title="新浪认证"></span></a>：【拿捏精髓！中山篆助你新学期元气满满】当被一键切换到开学模式时，别忘了带着郝建文老师的中山篆手札本，记录下新学期的每一天。 http://t.cn/A6RCV1cO ​
+                                       </p>
+                   
+                                           
+                   
+
+                <p class="liveStream_mainFeed_listContent_action WB_linkB">
+                    <span class="liveStream_mainFeed_listContent_actionTime"><a href="http://weibo.com/1569901041/Ov8DtkK70" target="_blank">今天 17:44</a></span>
+                    <span class="liveStream_mainFeed_listContent_actionMore"><a node-type="repost" href="javascript:;" data="uname=陕西虎牙&amp;mid=5074213674943818&amp;srcuid=1569901041&amp;forward=#微博公开课# #历史云讲堂# ">转发</a>
+                        <em class="liveStream_vline">|</em><a node-type="comment" href="javascript:;" data="uname=陕西虎牙&amp;mid=5074213674943818&amp;srcuid=1569901041">评论</a></span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+                    <div class="liveStream_mainFeed_list clearfix">
+            <div class="liveStream_mainFeed_list_wrap clearfix" id="mid5074213603903007">
+              <div class="liveStream_mainFeed_listPic"><a href="http://weibo.com/u/1569901041" target="_blank"><img src="./5d92c9f1ly8gw45c55qw5j20e80e8mxw.jpg" alt="陕西虎牙" title="陕西虎牙"></a></div>
+              <div class="liveStream_mainFeed_listContent">
+                <p class="liveStream_mainFeed_listContent_txt"><a href="http://weibo.com/u/1569901041" title="陕西虎牙" target="_blank">陕西虎牙</a><span class="WB_approve" title="新浪认证"></span>：<a href="http://s.weibo.com/weibo?q=%E5%8E%86%E5%8F%B2%E4%BA%91%E8%AE%B2%E5%A0%82&amp;from=601" target="_blank">#历史云讲堂#</a> <a href="http://s.weibo.com/weibo?q=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;from=601" target="_blank">#微博公开课#</a> 
+                                    </p>
+
+                               
+                
+                                   <p class="liveStream_mainFeed_listContent_txt">[转发微博]<a href="http://weibo.com/u/6529839374" title="细雨丝竹又名浅樽酌海" target="_blank">细雨丝竹又名浅樽酌海<span class="WB_approve" title="新浪认证"></span></a>：#红楼梦[超话]#根据#红楼梦# 对清虚观的描写，可知清代道观的山门内，陈列供奉下列神像：守门大帅、千里眼、（？）、当方土地公、本境城隍。#历史文化# http://t.cn/A6R93uQt ​
+                                       </p>
+                   
+                                           
+                   
+
+                <p class="liveStream_mainFeed_listContent_action WB_linkB">
+                    <span class="liveStream_mainFeed_listContent_actionTime"><a href="http://weibo.com/1569901041/Ov8DmgnlJ" target="_blank">今天 17:44</a></span>
+                    <span class="liveStream_mainFeed_listContent_actionMore"><a node-type="repost" href="javascript:;" data="uname=陕西虎牙&amp;mid=5074213603903007&amp;srcuid=1569901041&amp;forward=#历史云讲堂# #微博公开课# ">转发</a>
+                        <em class="liveStream_vline">|</em><a node-type="comment" href="javascript:;" data="uname=陕西虎牙&amp;mid=5074213603903007&amp;srcuid=1569901041">评论</a></span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+                    <div class="liveStream_mainFeed_list clearfix">
+            <div class="liveStream_mainFeed_list_wrap clearfix" id="mid5074209762707781">
+              <div class="liveStream_mainFeed_listPic"><a href="http://weibo.com/u/7474454705" target="_blank"><img src="./0089Q373ly8hokd5ygvojj30qo0qo40m.jpg" alt="科研云" title="科研云"></a></div>
+              <div class="liveStream_mainFeed_listContent">
+                <p class="liveStream_mainFeed_listContent_txt"><a href="http://weibo.com/u/7474454705" title="科研云" target="_blank">科研云</a><span class="WB_approve" title="新浪认证"></span>：海洋可再生能源技术前沿<a href="http://s.weibo.com/weibo?q=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;from=601" target="_blank">#微博公开课#</a>  <a href="http://t.cn/A6RCi6s6" target="_blank">http://t.cn/A6RCi6s6</a> ​
+                                    </p>
+
+                               
+                
+                   
+
+                <p class="liveStream_mainFeed_listContent_action WB_linkB">
+                    <span class="liveStream_mainFeed_listContent_actionTime"><a href="http://weibo.com/7474454705/Ov8xabmpT" target="_blank">今天 17:29</a></span>
+                    <span class="liveStream_mainFeed_listContent_actionMore"><a node-type="repost" href="javascript:;" data="uname=科研云&amp;mid=5074209762707781&amp;srcuid=7474454705&amp;forward=海洋可再生能源技术前沿#微博公开课#  http://t.cn/A6RCi6s6 ​">转发</a>
+                        <em class="liveStream_vline">|</em><a node-type="comment" href="javascript:;" data="uname=科研云&amp;mid=5074209762707781&amp;srcuid=7474454705">评论</a></span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+                    <div class="liveStream_mainFeed_list clearfix">
+            <div class="liveStream_mainFeed_list_wrap clearfix" id="mid5074203848213284">
+              <div class="liveStream_mainFeed_listPic"><a href="http://weibo.com/u/6249947943" target="_blank"><img src="./006OY8XZly8heog43vr2mj30e80e8mxj.jpg" alt="少年ZLX" title="少年ZLX"></a></div>
+              <div class="liveStream_mainFeed_listContent">
+                <p class="liveStream_mainFeed_listContent_txt"><a href="http://weibo.com/u/6249947943" title="少年ZLX" target="_blank">少年ZLX</a><span class="WB_approve" title="新浪认证"></span>：<a href="http://s.weibo.com/weibo?q=%E5%8E%9F%E7%94%9F%E9%B1%BC[%E8%B6%85%E8%AF%9D]&amp;from=601" target="_blank">#原生鱼[超话]#</a> 
+清凉泉水里的游鱼
+
+北京珍珠泉水下生境
+
+<a href="http://s.weibo.com/weibo?q=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;from=601" target="_blank">#微博公开课#</a><a href="http://s.weibo.com/weibo?q=%E5%8C%97%E4%BA%AC&amp;from=601" target="_blank">#北京#</a><a href="http://s.weibo.com/weibo?q=%E5%B8%A6%E7%9D%80%E5%BE%AE%E5%8D%9A%E5%8E%BB%E5%B1%B1%E9%87%8E&amp;from=601" target="_blank">#带着微博去山野#</a><a href="http://s.weibo.com/weibo?q=%E6%B6%A8%E5%A7%BF%E5%8A%BF&amp;from=601" target="_blank">#涨姿势#</a> <a href="http://t.cn/z8A4Rz0" target="_blank">http://t.cn/z8A4Rz0</a> <a href="http://t.cn/A6RCJzGu" target="_blank">http://t.cn/A6RCJzGu</a> ​
+                                    </p>
+
+                               
+                
+                   
+
+                <p class="liveStream_mainFeed_listContent_action WB_linkB">
+                    <span class="liveStream_mainFeed_listContent_actionTime"><a href="http://weibo.com/6249947943/Ov8nCysEk" target="_blank">今天 17:05</a></span>
+                    <span class="liveStream_mainFeed_listContent_actionMore"><a node-type="repost" href="javascript:;" data="uname=少年ZLX&amp;mid=5074203848213284&amp;srcuid=6249947943&amp;forward=#原生鱼[超话]# 
+清凉泉水里的游鱼
+
+北京珍珠泉水下生境
+
+#微博公开课##北京##带着微博去山野##涨姿势# http://t.cn/z8A4Rz0 http://t.cn/A6RCJzGu ​">转发</a>
+                        <em class="liveStream_vline">|</em><a node-type="comment" href="javascript:;" data="uname=少年ZLX&amp;mid=5074203848213284&amp;srcuid=6249947943">评论</a></span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+                    <div class="liveStream_mainFeed_list clearfix">
+            <div class="liveStream_mainFeed_list_wrap clearfix" id="mid5074202612732393">
+              <div class="liveStream_mainFeed_listPic"><a href="http://weibo.com/u/6249947943" target="_blank"><img src="./006OY8XZly8heog43vr2mj30e80e8mxj.jpg" alt="少年ZLX" title="少年ZLX"></a></div>
+              <div class="liveStream_mainFeed_listContent">
+                <p class="liveStream_mainFeed_listContent_txt"><a href="http://weibo.com/u/6249947943" title="少年ZLX" target="_blank">少年ZLX</a><span class="WB_approve" title="新浪认证"></span>：<a href="http://s.weibo.com/weibo?q=%E6%B2%B3%E5%8C%97[%E8%B6%85%E8%AF%9D]&amp;from=601" target="_blank">#河北[超话]#</a> 
+清澈透明的滏源泉
+
+滏源泉水下生境
+
+<a href="http://s.weibo.com/weibo?q=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;from=601" target="_blank">#微博公开课#</a><a href="http://s.weibo.com/weibo?q=%E5%8E%9F%E7%94%9F%E9%B1%BC&amp;from=601" target="_blank">#原生鱼#</a><a href="http://s.weibo.com/weibo?q=%E5%B8%A6%E7%9D%80%E5%BE%AE%E5%8D%9A%E5%8E%BB%E5%B1%B1%E9%87%8E&amp;from=601" target="_blank">#带着微博去山野#</a><a href="http://s.weibo.com/weibo?q=%E6%B6%A8%E5%A7%BF%E5%8A%BF&amp;from=601" target="_blank">#涨姿势#</a> <a href="http://t.cn/RI4cO3p" target="_blank">http://t.cn/RI4cO3p</a> <a href="http://t.cn/A6RCxnLO" target="_blank">http://t.cn/A6RCxnLO</a> ​
+                                    </p>
+
+                               
+                
+                   
+
+                <p class="liveStream_mainFeed_listContent_action WB_linkB">
+                    <span class="liveStream_mainFeed_listContent_actionTime"><a href="http://weibo.com/6249947943/Ov8lDbsOR" target="_blank">今天 17:00</a></span>
+                    <span class="liveStream_mainFeed_listContent_actionMore"><a node-type="repost" href="javascript:;" data="uname=少年ZLX&amp;mid=5074202612732393&amp;srcuid=6249947943&amp;forward=#河北[超话]# 
+清澈透明的滏源泉
+
+滏源泉水下生境
+
+#微博公开课##原生鱼##带着微博去山野##涨姿势# http://t.cn/RI4cO3p http://t.cn/A6RCxnLO ​">转发</a>
+                        <em class="liveStream_vline">|</em><a node-type="comment" href="javascript:;" data="uname=少年ZLX&amp;mid=5074202612732393&amp;srcuid=6249947943">评论</a></span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+                    <div class="liveStream_mainFeed_list clearfix">
+            <div class="liveStream_mainFeed_list_wrap clearfix" id="mid5074196876755345">
+              <div class="liveStream_mainFeed_listPic"><a href="http://weibo.com/xinchenggege" target="_blank"><img src="./5e7b6b43ly8hb3un1c9zpj20u00u076s.jpg" alt="燕阳那方" title="燕阳那方"></a></div>
+              <div class="liveStream_mainFeed_listContent">
+                <p class="liveStream_mainFeed_listContent_txt"><a href="http://weibo.com/xinchenggege" title="燕阳那方" target="_blank">燕阳那方</a>：<a href="http://s.weibo.com/weibo?q=%E5%BC%A0%E6%9C%9D%E9%98%B3%E7%9A%84%E7%89%A9%E7%90%86%E8%AF%BE&amp;from=601" target="_blank">#张朝阳的物理课#</a> <a href="http://s.weibo.com/weibo?q=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;from=601" target="_blank">#微博公开课#</a> ​​​<img src="./vw_org.gif" title="威武">[打call][赞啊][鲜花]
+                                    </p>
+
+                               
+                
+                                   <p class="liveStream_mainFeed_listContent_txt">[转发微博]<a href="http://weibo.com/u/7324423015" title="张朝阳的物理课" target="_blank">张朝阳的物理课<span class="WB_approve" title="新浪认证"></span></a>：多粒子的森林，比热带雨林还难闯？#张朝阳的物理课##微博公开课# http://t.cn/A6R9TF0S ​
+                                       </p>
+                   
+                                           
+                   
+
+                <p class="liveStream_mainFeed_listContent_action WB_linkB">
+                    <span class="liveStream_mainFeed_listContent_actionTime"><a href="http://weibo.com/1585146691/Ov8cnslnb" target="_blank">今天 16:37</a></span>
+                    <span class="liveStream_mainFeed_listContent_actionMore"><a node-type="repost" href="javascript:;" data="uname=燕阳那方&amp;mid=5074196876755345&amp;srcuid=1585146691&amp;forward=#张朝阳的物理课# #微博公开课# ​​​[威武][打call][赞啊][鲜花]">转发</a>
+                        <em class="liveStream_vline">|</em><a node-type="comment" href="javascript:;" data="uname=燕阳那方&amp;mid=5074196876755345&amp;srcuid=1585146691">评论</a></span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+                    <div class="liveStream_mainFeed_list clearfix">
+            <div class="liveStream_mainFeed_list_wrap clearfix" id="mid5074196817774701">
+              <div class="liveStream_mainFeed_listPic"><a href="http://weibo.com/xinchenggege" target="_blank"><img src="./5e7b6b43ly8hb3un1c9zpj20u00u076s.jpg" alt="燕阳那方" title="燕阳那方"></a></div>
+              <div class="liveStream_mainFeed_listContent">
+                <p class="liveStream_mainFeed_listContent_txt"><a href="http://weibo.com/xinchenggege" title="燕阳那方" target="_blank">燕阳那方</a>：<a href="http://s.weibo.com/weibo?q=%E5%BC%A0%E6%9C%9D%E9%98%B3%E7%9A%84%E7%89%A9%E7%90%86%E8%AF%BE&amp;from=601" target="_blank">#张朝阳的物理课#</a> <a href="http://s.weibo.com/weibo?q=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;from=601" target="_blank">#微博公开课#</a> ​​​<img src="./vw_org.gif" title="威武">[打call][赞啊][鲜花]
+                                    </p>
+
+                               
+                
+                                   <p class="liveStream_mainFeed_listContent_txt">[转发微博]<a href="http://weibo.com/u/7324423015" title="张朝阳的物理课" target="_blank">张朝阳的物理课<span class="WB_approve" title="新浪认证"></span></a>：讲道理，这段你应该很熟悉#张朝阳的物理课##微博公开课# http://t.cn/A6R9Tmzf ​
+                                       </p>
+                   
+                                           
+                   
+
+                <p class="liveStream_mainFeed_listContent_action WB_linkB">
+                    <span class="liveStream_mainFeed_listContent_actionTime"><a href="http://weibo.com/1585146691/Ov8chwCyp" target="_blank">今天 16:37</a></span>
+                    <span class="liveStream_mainFeed_listContent_actionMore"><a node-type="repost" href="javascript:;" data="uname=燕阳那方&amp;mid=5074196817774701&amp;srcuid=1585146691&amp;forward=#张朝阳的物理课# #微博公开课# ​​​[威武][打call][赞啊][鲜花]">转发</a>
+                        <em class="liveStream_vline">|</em><a node-type="comment" href="javascript:;" data="uname=燕阳那方&amp;mid=5074196817774701&amp;srcuid=1585146691">评论</a></span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+                    <div class="liveStream_mainFeed_list clearfix">
+            <div class="liveStream_mainFeed_list_wrap clearfix" id="mid5074196789200329">
+              <div class="liveStream_mainFeed_listPic"><a href="http://weibo.com/xinchenggege" target="_blank"><img src="./5e7b6b43ly8hb3un1c9zpj20u00u076s.jpg" alt="燕阳那方" title="燕阳那方"></a></div>
+              <div class="liveStream_mainFeed_listContent">
+                <p class="liveStream_mainFeed_listContent_txt"><a href="http://weibo.com/xinchenggege" title="燕阳那方" target="_blank">燕阳那方</a>：<a href="http://s.weibo.com/weibo?q=%E5%BC%A0%E6%9C%9D%E9%98%B3%E7%9A%84%E7%89%A9%E7%90%86%E8%AF%BE&amp;from=601" target="_blank">#张朝阳的物理课#</a> <a href="http://s.weibo.com/weibo?q=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;from=601" target="_blank">#微博公开课#</a> ​​​<img src="./vw_org.gif" title="威武">[打call][赞啊][鲜花]
+                                    </p>
+
+                               
+                
+                                   <p class="liveStream_mainFeed_listContent_txt">[转发微博]<a href="http://weibo.com/u/7324423015" title="张朝阳的物理课" target="_blank">张朝阳的物理课<span class="WB_approve" title="新浪认证"></span></a>：传说中的量子世界的地图，水灵灵的出现#张朝阳的物理课##微博公开课# http://t.cn/A6R9TCji ​
+                                       </p>
+                   
+                                           
+                   
+
+                <p class="liveStream_mainFeed_listContent_action WB_linkB">
+                    <span class="liveStream_mainFeed_listContent_actionTime"><a href="http://weibo.com/1585146691/Ov8ceCBqp" target="_blank">今天 16:37</a></span>
+                    <span class="liveStream_mainFeed_listContent_actionMore"><a node-type="repost" href="javascript:;" data="uname=燕阳那方&amp;mid=5074196789200329&amp;srcuid=1585146691&amp;forward=#张朝阳的物理课# #微博公开课# ​​​[威武][打call][赞啊][鲜花]">转发</a>
+                        <em class="liveStream_vline">|</em><a node-type="comment" href="javascript:;" data="uname=燕阳那方&amp;mid=5074196789200329&amp;srcuid=1585146691">评论</a></span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          		  
+			
+          <!-- 查看更多 -->
+          <div class="liveStream_main_feedMore"><a href="javascript:;" style="">点击查看更多</a></div>
+          <!-- /查看更多 -->
+        </div>
+       <div class="liveStream_main_feed" node-type="box" style="display:none;">
+
+			
+          <!-- 查看更多 -->
+          <div class="liveStream_main_feedMore"><a style="width: 0px; height: 0px; overflow: hidden; display: none;" href="javascript:;">点击查看更多</a></div>
+          <!-- /查看更多 -->
+        </div>
+        <!-- /liveStream_main_feed -->
+      </div>
+    </div>
+    <!-- 显示关注 -->
+        <div class="liveStream_follow clearfix">
+      <p class="liveStream_follow_title">关注他们</p>
+      <div class="liveStream_follow_list" id="pl_live_fans">
+        <a href="https://widget.weibo.com/livestream/listlive.php?publish=1&amp;talk=1&amp;refer=1&amp;titlebar=1&amp;border=1&amp;member=1&amp;width=0&amp;height=700&amp;skin=1&amp;colordiy=0&amp;ptype=1&amp;language=zh_cn&amp;appkey=3168463122&amp;ptopic=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;atopic=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;at=1#" class="liveStream_followList_arr liveStream_followList_arrPre" node-type="prevBtn" style="display: none;"></a>
+        <a href="https://widget.weibo.com/livestream/listlive.php?publish=1&amp;talk=1&amp;refer=1&amp;titlebar=1&amp;border=1&amp;member=1&amp;width=0&amp;height=700&amp;skin=1&amp;colordiy=0&amp;ptype=1&amp;language=zh_cn&amp;appkey=3168463122&amp;ptopic=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;atopic=%E5%BE%AE%E5%8D%9A%E5%85%AC%E5%BC%80%E8%AF%BE&amp;at=1#" class="liveStream_followList_arr liveStream_followList_arrNext" node-type="nextBtn" style="display: none;"></a>
+        <div node-type="slider">
+	        <ul class="liveStream_follow_listCon" node-type="fansList">
+	          	        </ul>
+         </div>
+      </div>
+    </div>
+        <!-- 显示关注 -->
+  </div>
+<div class=" WB_widgets WB_widgets_layer_picshow"></div></div>
+<!--****** /他们在说  已登录 ******* -->
+<br>
+<script src="./live.js.下载" type="text/javascript"></script><div node-type="outer" class="WB_tips_top" style="position: absolute; visibility: visible; display: none;"><div node-type="inner" class="bg"><div class="tips_inner"><span class="WB_tipS_warn"></span><span class="WB_icon_txt">您的帐号尚未开通微博，<a href="https://widget.weibo.com/livestream/%22//weibo.com/signup/full_info.php?appsrc=6cm7D0&amp;backurl=https%3A%2F%2Fwidget.weibo.com%2Flivestream%2Flistlive.php%3Fpublish%3D1%26talk%3D1%26refer%3D1%26titlebar%3D1%26border%3D1%26member%3D1%26width%3D0%26height%3D700%26skin%3D1%26colordiy%3D0%26ptype%3D1%26language%3Dzh_cn%26appkey%3D3168463122%26ptopic%3D%25E5%25BE%25AE%25E5%258D%259A%25E5%2585%25AC%25E5%25BC%2580%25E8%25AF%25BE%26atopic%3D%25E5%25BE%25AE%25E5%258D%259A%25E5%2585%25AC%25E5%25BC%2580%25E8%25AF%25BE%26at%3D1&amp;showlogo=0&amp;vsrc=weiboshow&amp;from=zw%22" target="_blank">立即开通</a></span><!--temp end--></div></div></div>
+<!-- SUDA_CODE_START -->
+<script type="text/javascript" charset="utf-8" src="./suda.js.下载"></script>
+<!-- SUDA_CODE_END -->
+
+
+</body></html>
