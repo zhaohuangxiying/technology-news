@@ -112,16 +112,15 @@
 					<p></p>
 
 				</div>
-				<div class="videoBox">
-					
+				<div style="width:980px;height: 555px;position: relative;" class="videoBox">
 					<!--<iframe style="position: absolute; top: 0px; left: 120px;" width="1800px" height="538px" src="https://33260e1498.live.polyv.cn/watch/5090537" allowfullscreen="" frameborder="0" scrolling="no"></iframe>-->
-					  <div class="input-div">
+					  <div id="zhiboicon" style="width: 959px; height: 532px; position: absolute; top: 4px; border: 1px solid red; background-image:url('naan.jpg'); z-index:1;" class="input-div">
 						<form method="post" id="str-post">
 							<input type="text" value="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8" name="url" placeholder="请输入m3u8播放地址" autocomplete="off">
 							<button type="submit">播放</button>
 						</form>
 					  </div>
-					<video id="player" controls=""></video>
+					<video style="width:949px; height:512px;" id="player" controls=""></video>
 					<script>
 						function playM3u8(url){
 							if(Hls.isSupported()) {
@@ -133,7 +132,13 @@
 								hls.attachMedia(video);
 								hls.on(Hls.Events.MANIFEST_PARSED,function() {
 									video.play();
+									$("#zhiboicon").hide()
 								});
+								video.addEventListener('ended', function () {  
+								   $("#str-post").hide()
+						           $("#zhiboicon").show()
+								   $("#zhiboicon").css('background-image', 'url(jieshu.jpg)');								  
+                                }, false);
 							}
 						}
 						$("#str-post").submit(function () {
