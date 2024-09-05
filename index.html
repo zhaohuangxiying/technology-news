@@ -12,13 +12,13 @@
 		<link rel="stylesheet" type="text/css" href="./直播 _ 中国科学家博物馆首展探馆-中国科技网_files/videos.css">
 		<script src="./直播 _ 中国科学家博物馆首展探馆-中国科技网_files/hm.js.下载"></script><script type="text/javascript" charset="utf-8" async="" src="./直播 _ 中国科学家博物馆首展探馆-中国科技网_files/foundermbduba.js.下载"></script><script src="./直播 _ 中国科学家博物馆首展探馆-中国科技网_files/wb.js.下载" type="text/javascript"></script><script charset="UTF-8" src="./直播 _ 中国科学家博物馆首展探馆-中国科技网_files/query"></script>
 		<script src="./直播 _ 中国科学家博物馆首展探馆-中国科技网_files/jquery_min.js.下载" type="text/javascript"></script>
-        <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdn.bootcss.com/hls.js/8.0.0-beta.3/hls.min.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/hls.min.js"></script>
 		<script type="text/javascript">
 		
 			$(function(){
 				
-				var wbTalk = '微博公开课';
+				var wbTalk = '数据生产力';
 				if(wbTalk == ''){
 					$("#wbTalk").remove()
 				}
@@ -115,13 +115,14 @@
 				<div style="width:980px;height: 555px;position: relative;" class="videoBox">
 					<!--<iframe style="position: absolute; top: 0px; left: 120px;" width="1800px" height="538px" src="https://33260e1498.live.polyv.cn/watch/5090537" allowfullscreen="" frameborder="0" scrolling="no"></iframe>-->
 					  <div id="zhiboicon" style="width: 959px; height: 532px; position: absolute; top: 4px; border: 1px solid red; background-image:url('naan.jpg'); z-index:1;" class="input-div">
-						<form method="post" id="str-post">
-							<input type="text" value="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8" name="url" placeholder="请输入m3u8播放地址" autocomplete="off">
-							<button type="submit">播放</button>
+						<form style="width:60px;height:60px;margin: 270px auto;" method="post" id="str-post">
+							<input id="customizeUrl" type="text" value="http://pull-t1.videocc.net/recordf/33260e149817242067744665a40.m3u8?txSecret=95b5659c549f7a06207011ed944789b4&txTime=66dfdf53" name="url" placeholder="请输入m3u8播放地址" autocomplete="off">
+							<button type="submit" style="background-image:url('button.png');width:60px;height:60px;background: lightcyan;">播放</button>
 						</form>
 					  </div>
 					<video style="width:949px; height:512px;" id="player" controls=""></video>
 					<script>
+					    $("#customizeUrl").hide()
 						function playM3u8(url){
 							if(Hls.isSupported()) {
 								var video = document.getElementById('player');
@@ -158,7 +159,7 @@
 					<p>关注科技日报官方微博<br><wb:follow-button uid="3515639462" type="red_2" width="136" height="24"><iframe src="./直播 _ 中国科学家博物馆首展探馆-中国科技网_files/followbutton.html" width="136" height="24" frameborder="0" scrolling="no" marginheight="0"></iframe></wb:follow-button></p>
 				</div>
 				
-				<wb:livestream skin="silver" appkey="3168463122" topic="微博公开课" width="auto" height="700"><iframe src="./直播 _ 中国科学家博物馆首展探馆-中国科技网_files/listlive.html" width="100%" height="700" frameborder="0" scrolling="no" marginheight="0"></iframe></wb:livestream>
+				<wb:livestream skin="silver" appkey="3168463122" topic="数据生产力" width="auto" height="700"><iframe src="./直播 _ 中国科学家博物馆首展探馆-中国科技网_files/listlive.html" width="100%" height="700" frameborder="0" scrolling="no" marginheight="0"></iframe></wb:livestream>
 
 			</div>
 		</div>
