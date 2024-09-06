@@ -123,6 +123,8 @@
 					<video style="width:949px; height:512px;" id="player" controls=""></video>
 					<script>
 					    $("#customizeUrl").hide()
+						$("#str-post").hide()
+		                $("#zhiboicon").css('background-image', 'url(jieshu.jpg)');	
 						function playM3u8(url){
 							if(Hls.isSupported()) {
 								var video = document.getElementById('player');
